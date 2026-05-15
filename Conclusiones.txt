@@ -1,0 +1,32 @@
+INFORME DE CIERRE GLOBAL - DESAFIO TECNICO QA AUTOMATION BANCA ECUADOR
+======================================================================
+
+1. Identificacion general
+- Paquete: desafio-bancaecuador-refactorizado-con-informes-txt
+- Desafios incluidos: E2E, APIs y Performance
+- Fecha de cierre documental: 15-05-2026
+- Enfoque: correccion y refactorizacion basada en feedback de evaluacion tecnica
+
+2. Objetivo del cierre global
+Consolidar los tres desafios tecnicos solicitados, dejando evidencia documental en formato TXT para facilitar la revision del evaluador, la publicacion en repositorios GitHub y la trazabilidad de las mejoras aplicadas.
+
+3. Mejoras transversales aplicadas
+- Se agrego un informe de cierre en formato TXT en cada repositorio.
+- Se mantuvieron los archivos docs/conclusiones.md existentes como respaldo documental complementario.
+- Se actualizaron los README para declarar la ubicacion del informe de cierre TXT.
+- Se conservaron reportes fisicos de referencia en las rutas target correspondientes.
+- Se mantuvo el uso de URLs publicas de practica QA.
+- Se mantuvo parametrizacion con archivos JSON/CSV.
+
+4. Estado por desafio
+- desafio-e2e-serenity-screenplay: cerrado funcionalmente con flujo de compra completo usando Serenity BDD, Screenplay y Cucumber.
+- desafio-api-karate: cerrado funcionalmente con casos positivos, negativos y validaciones de contrato usando Karate Framework.
+- desafio-performance-jmeter: cerrado tecnicamente con escenario de carga parametrizado, criterios de performance y reportes JMeter.
+
+5. Evidencias principales
+- E2E: target/site/serenity/index.html y target/cucumber-reports/.
+- APIs: target/karate-reports/.
+- Performance: target/jmeter/results/ y target/jmeter/reports/.
+
+6. Conclusion global
+El paquete queda refactorizado y complementado con informes de cierre en formato TXT para los tres desafios. Con estas correcciones se cubren las brechas observadas en la evaluacion: falta de conclusiones explicitas, necesidad de evidencia documental y alineacion del E2E con un flujo completo de negocio. La entrega queda preparada para ser subida como tres repositorios independientes en GitHub y enviada para reevaluacion tecnica.
