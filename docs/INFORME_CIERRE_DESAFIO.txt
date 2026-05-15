@@ -1,0 +1,50 @@
+INFORME DE CIERRE DEL DESAFIO - AUTOMATIZACION DE APIS
+======================================================
+
+1. Identificacion del desafio
+- Repositorio: desafio-api-karate
+- Tipo de ejercicio: Automatizacion de APIs
+- Framework principal: Karate Framework
+- Gestor de dependencias: Maven 3.9.1 compatible
+- JDK objetivo: Java 17, compatible con JDK 11/17
+- URL publica QA utilizada: https://dummyjson.com
+- Fecha de cierre documental: 15-05-2026
+
+2. Objetivo del cierre
+Dejar documentado el cierre funcional y tecnico del desafio de APIs, evidenciando cobertura positiva, negativa, validaciones de contrato, uso de datos parametrizados y generacion de reportes mediante Karate.
+
+3. Alcance cubierto
+El alcance automatizado considera los siguientes escenarios:
+- Autenticacion exitosa mediante POST /auth/login.
+- Validacion negativa de autenticacion con credenciales invalidas.
+- Consulta de productos por ID mediante GET /products/{id} usando datos externos.
+- Creacion de producto mediante POST /products/add.
+- Actualizacion de producto mediante PUT /products/{id}.
+- Busqueda de productos mediante GET /products/search.
+- Validacion de contrato minimo de respuesta para productos.
+- Validacion de producto inexistente mediante caso negativo.
+
+4. Refactorizacion aplicada
+- Se ordenaron los escenarios por dominio funcional: autenticacion y productos.
+- Se reforzo la cobertura positiva y negativa.
+- Se mantuvo karate-config.js para administracion de variables de ambiente.
+- Se parametrizaron datos en JSON y CSV: auth-users.json, products.csv y new-product.json.
+- Se dejo configurado el runner Java para ejecucion Maven.
+- Se incorporaron reportes de referencia en target/karate-reports.
+
+5. Evidencia y reportes
+Las evidencias configuradas y disponibles en el proyecto son:
+- Reporte Karate HTML: target/karate-reports/karate-summary.html
+- Reporte Cucumber/JSON generado por Karate: target/karate-reports/api-cucumber.json
+
+6. Resultado del cierre
+Estado del desafio de APIs: CERRADO FUNCIONALMENTE CON COBERTURA API POSITIVA, NEGATIVA Y DE CONTRATO.
+El desafio queda alineado con las directrices tecnicas al utilizar Karate Framework, Maven, datos CSV/JSON y reportes generados en la ruta estandar de Karate.
+
+7. Observaciones
+- DummyJSON es una API publica de practica; algunos endpoints simulan operaciones de escritura y pueden no persistir datos realmente.
+- Los reportes incluidos son evidencia de referencia. En un entorno local o CI/CD deben regenerarse ejecutando mvn clean test.
+- Se recomienda integrar la suite en pipeline para almacenar historico de reportes por ejecucion.
+
+8. Conclusion final
+El desafio de APIs queda corregido y documentado como una suite mantenible, parametrizada y alineada con buenas practicas de automatizacion de servicios. La solucion permite evaluar conocimientos de Karate DSL, validacion de respuestas HTTP, contratos basicos, datos externos y comunicacion de resultados mediante reportes.

@@ -1,0 +1,14 @@
+[
+  {
+    "caseId": "AUTH-001",
+    "username": "emilys",
+    "password": "emilyspass",
+    "expectedStatus": 200
+  },
+  {
+    "caseId": "AUTH-002",
+    "username": "usuario_invalido",
+    "password": "clave_invalida",
+    "expectedStatus": 400
+  }
+]

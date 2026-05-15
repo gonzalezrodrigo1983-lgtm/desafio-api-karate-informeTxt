@@ -1,0 +1,4 @@
+[
+  {"name":"Autenticación API DummyJSON","elements":[{"name":"Login exitoso de usuario parametrizado en JSON","type":"scenario"},{"name":"Login fallido de usuario parametrizado en JSON","type":"scenario"}]},
+  {"name":"Gestión y consulta de productos API DummyJSON","elements":[{"name":"Consultar producto existente por identificador","type":"scenario"},{"name":"Crear producto con payload parametrizado","type":"scenario"},{"name":"Actualizar producto existente","type":"scenario"},{"name":"Consultar producto inexistente","type":"scenario"},{"name":"Buscar productos por texto y validar contrato mínimo","type":"scenario"}]}
+]
